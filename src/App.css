@@ -7,7 +7,6 @@
 .element {
   background-color: #f7fafc;
   border-width: 1px;
-  box-shadow: 10px;
   border-radius: 6px;
   padding: 20px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
@@ -40,4 +39,8 @@ center {
   display: flex;
   word-break: break-word;
   flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
 }

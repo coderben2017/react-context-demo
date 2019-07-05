@@ -34,7 +34,7 @@ class NodeA extends React.Component {
   render() {
     return (
       <div className="Root element">
-        <center> A </center>
+        <span className="text-center"> A </span>
         <NodeB />
         <NodeC />
       </div>
@@ -45,7 +45,7 @@ class NodeA extends React.Component {
 const NodeB = () => {
   return (
     <div className="Tree element">
-      <center> B</center>
+      <span className="text-center"> B</span>
       <NodeD />
     </div>
   );
@@ -54,7 +54,7 @@ const NodeB = () => {
 const NodeC = () => {
   return (
     <div className="Tree element">
-      <center> C </center>
+      <span className="text-center"> C </span>
       <NodeE />
     </div>
   );
@@ -63,7 +63,7 @@ const NodeC = () => {
 const NodeD = () => {
   return (
     <div className="Child element">
-      <center> D </center>
+      <span className="text-center"> D </span>
       <Consumer>
         {({ val, onUserInput }) => (
           <textarea
@@ -79,7 +79,7 @@ const NodeD = () => {
 const NodeE = () => {
   return (
     <div className="Child element ">
-      <center> E </center>
+      <span className="text-center"> E </span>
       <Consumer>{({val}) => <p>{val}</p>}</Consumer>
     </div>
   );
